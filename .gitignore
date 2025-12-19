@@ -1,2 +1,15 @@
-__pycache__
-notify.cpython-312
+.venv/
+venv/
+env/
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+rates.db
+rates.db-shm
+rates.db-wal
+
+*.log
+.DS_Store
