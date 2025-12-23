@@ -1,4 +1,3 @@
-from app.ws.websocket import manager
 from app.nats.nats_client import publish_rate
 
 async def notify_rate_event(event: str, rate_data):

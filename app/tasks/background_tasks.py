@@ -2,7 +2,6 @@ import asyncio
 from app.services.parser import RatesParser
 from app.db.session import AsyncSessionLocal
 from app.models.currency import CurrencyRate
-from app.nats.nats_client import publish_rate
 from sqlalchemy import select
 from app.utils.notify import notify_rate_event
 

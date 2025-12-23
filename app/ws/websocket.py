@@ -14,7 +14,7 @@ class ConnectionManager:
 
     async def broadcast(self, message: dict):
         for ws in self.active_connections:
-            await ws.send_text(json.dumps(message))
+            await ws.send_text(json.dumps(message,ensure_ascii=False))
 
 manager = ConnectionManager()
 

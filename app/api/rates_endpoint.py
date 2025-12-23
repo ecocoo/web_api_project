@@ -4,9 +4,6 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from typing import List
 from app.db.session import get_db
 from app.models.currency import CurrencyRate
-from app.tasks.background_tasks import save_rates_to_db
-from app.ws.websocket import manager
-from app.nats.nats_client import publish_rate
 from pydantic import BaseModel
 from app.utils.notify import notify_rate_event
 
